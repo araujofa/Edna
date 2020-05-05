@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: rgb(241, 239, 239);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Lobster', cursive;
+    font-weight: lighter;
+}
+
+header p {
+    text-align: center;
+}
+
+#square {
+    border: 2px dotted black;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+span.under {
+    text-decoration: underline;
+}
+
+main {
+    text-align: center;
+}
+
+main h2 {
+    margin-top: 150px;
+    font-size: 2.2em;
+}
+
+#arvore {
+    margin-top: 70px;
+    padding: 20px;
+}
+
+.imgs img {
+    border: 1px solid rgb(41, 134, 255);
+}
+
+.imgs p {
+    margin-top: 10px;
+    font-weight: lighter;
+}
+
+.imgs {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+h6 {
+    font-size: 3.5em;
+}
+
+h3 {
+    font-size: 1.9em;
+}
+
+h4 {
+    font-size: 1.3em;
+}
+
+#poema {
+    margin-top: 70px !important;
+    max-width: 500px;
+    margin: 0 auto;
+    border: 1px dotted black;
+    padding: 20px;
+    background-color: white;
+}
+
+#poema p {
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+/* Slideshow container */
+
+body {
+    font-family: Verdana, sans-serif;
+}
+
+.mySlides {
+    display: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.slideshow-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    border: 1px solid rgb(236, 111, 111);
+}
+
+
+/* Caption text */
+
+.text {
+    color: black;
+    font-size: 2.5em;
+    font-weight: lighter;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+    -webkit-text-stroke: .5px;
+    -webkit-text-stroke-color: white;
+}
+
+.active {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .text {
+        font-size: 11px
+    }
+}

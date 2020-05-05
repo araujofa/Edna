@@ -1,0 +1,155 @@
+<!--FEITO COM CARINHO POR FABIO DE ARAUJO SILVA-->
+
+<!DOCTYPE html>
+<!--DEFINE A LINGUA DO PROJETO-->
+<html lang="pt-br">
+
+<head>
+    <!--DEFINE O TIPO DE CARACTERES A SEREM UTILIZADOS-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--IMPORTA O SCRIPT DO FONTAWESOME-->
+    <script src="https://kit.fontawesome.com/7f5cd7914c.js" crossorigin="anonymous"></script>
+    <!--IMPORTA FONTES DO GOOGLE FONTS-->
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <!--CRIA UM LINK PARA O ARQUIVO CSS DO PROJETO-->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <!--CRIA UM LINK PARA O ARQUIVO JS DO PROJETO-->
+    <script type="text/javascript" src="js/index.js"></script>
+    <!--CRIA UM ICONE NO SEPARADOR DE JANELAS-->
+    <link rel="icon" href="img/perfil.jpg">
+    <!--DAR UM TITULO AO PROJETO-->
+    <title>Edna Aparecida de Araujo Silva</title>
+</head>
+
+<body>
+    <header>
+        <div id="square">
+            <h1><i class="fas fa-heart"></i> <span class="under">De</span>: Fabio de Araujo Silva <i class="fas fa-heart"></i></h1>
+            <h1><i class="fas fa-heart"></i> <span class="under">Para</span>: Edna Aparecida de Araujo Silva <i class="fas fa-heart"></i></h1>
+            <p><i class="far fa-heart"></i> Dia das mães <i class="far fa-heart"></i></p>
+        </div>
+    </header>
+    <main>
+
+
+        <h2><i class="far fa-grin-hearts"></i> Alguns de nossos momentos: </h2>
+        <br>
+
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/juntos.jpg" style="width:100%">
+                <div class="text">Familia linda</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/natal2019.jpg" style="width:100%">
+                <div class="text">Natal 2019</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/gua17.jpg" style="width:100%">
+                <div class="text">Guaruja 2017</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/lind17.jpg" style="width:100%">
+                <div class="text">Lindóia 2017</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/niver.jpg" style="width:100%">
+                <div class="text">Aniversario Fabio 2019</div>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="img/nicer.jpg" style="width:100%">
+                <div class="text">Aniversario da mamãe 2020</div>
+            </div>
+
+        </div>
+
+        <section id="arvore">
+
+            <h3><i class="fas fa-users"></i> Nossa familia...</h3>
+
+            <div class="imgs">
+
+                <div id="img">
+                    <img src="img/edna.jpg" title="Melhor mãe do mundo" width="200px">
+                    <p>Melhor mãe do mundo</p>
+                </div>
+
+                <h6>+</h6>
+
+                <div id="img">
+                    <img src="img/valter.jpg" title="Melhor pai do mundo" width="200px">
+                    <p>Melhor pai do mundo</p>
+                </div>
+
+            </div>
+
+            <h6>=</h6>
+
+            <div class="imgs">
+                <div>
+
+                    <img src="img/ferna.jpg" width="200px"> <img src="img/fabio.jpg" width="200px">
+                    <p>Dois filhos maravilhosos e uma bela familia</p>
+
+                </div>
+            </div>
+
+        </section>
+
+        <section id="poema">
+
+            <h4><i class="fas fa-envelope-open-text"></i> Aqui fica um poema para você, mãe</h4>
+
+            <p>
+                Ela tem a capacidade de ouvir o silêncio. <br> Adivinhar sentimentos. <br> Encontrar a palavra certa nos momentos incertos. <br> Nos fortalecer quando tudo ao nosso redor parece ruir. <br> Sabedoria emprestada dos deuses para nos proteger
+                e amparar. <br> <br> Sua existência é em si um ato de amor. <br> Gerar, cuidar, nutrir. <br> Amar, amar, amar... <br> Amar com um amor incondicional que nada espera em troca. <br> Afeto desmedido e incontido, Mãe é um ser infinito.
+            </p>
+
+            <br>
+            <br>
+            <hr>
+
+            <p>OBS: Desculpa por tudo de ruim que eu ja te causei, eu te amo muito e obrigado por tudo. <i class="far fa-heart"></i></p>
+
+        </section>
+
+    </main>
+
+    <br>
+    <br>
+    <br>
+
+    <script>
+        var slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 4000); // Change image every 2 seconds
+        }
+    </script>
+</body>
+
+</html>
